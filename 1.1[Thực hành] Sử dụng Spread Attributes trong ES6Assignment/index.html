@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Sử dụng Spread Attributes trong ES6</title>
+</head>
+<body>
+
+
+<script>
+
+    //Bước 1: Trong bước này, chúng ta sao chép mảng (từ cars1 sang cars2 và cars1 sang cars3) bằng cách sử dụng Spread Operator.
+    // const cars1 = ["AUDI", "BMW", "TATA","MERCEDES"]
+    // const cars2 = [...cars1]
+    // const cars3 = [...cars1,"NISSAN", "TOYOTA"]
+
+    // console.log(cars1);
+    // console.log(cars2);
+    // console.log(cars3);
+
+
+    //Bước 2: Sử dụng Spread Operator để hợp nhất các mảng.
+    // const cars1 = ["AUDI","BMW","TATA","MERCEDES"];
+    // const cars2 = ["NISSAN","TOYOTA"];
+    //
+    // const cars3 = [...cars1, ...cars2];
+    // console.log(cars3);
+
+    //Bước 3: Sử dụng Spread Operator với các đối tượng
+    //
+    // const cars1 = {
+    //     Brand : "BMW",
+    //     Color : "RED"
+    // }
+    // // copy cars1 object using spread
+    // // operator to create cars2 object
+    // const cars2 = {...cars1};
+    // console.log(cars2);
+
+
+    //Bước 4: Sử dụng Spread Operator để hợp nhất các đối tượng. Thay thế chương trình bằng đoạn mã sau:
+    // const cars1 = {
+    //     Brand : "Toyota",
+    //     Color : "RED",
+    //     Seat : 4
+    // }
+    // // cars2 is a object which is containing
+    // // the attributes Brand, Color & Year
+    // const cars2 = {
+    //     Brand : "Nissan",
+    //     Color : "BLUE",
+    //     Year : 2004
+    // }
+    // const cars4 = {
+    //     Brand : "Camry",
+    //     Color : "Black",
+    //     Year : 2010,
+    //     country:"Japan"
+    // }
+    // const cars3 = {...cars1,...cars2,...cars4};
+    // console.log(cars3);
+    //
+    //
+
+    // Bước 5: Sử dụng Spread Operator để chia chuỗi thành một mảng chuỗi
+    //     Thay thế chương trình bằng đoạn mã sau:
+    // Example 5: Use the spread operator to split the string into an array of strings.
+    // const car = "CODEGYM";
+    // const a = [...car];
+    // console.log(a);
+
+    // Bước 6: Sử dụng Spread Operator để cấu trúc lại mảng
+    // Thay thế chương trình bằng đoạn mã sau:
+    // Example 6: Use the spread operator with array destructuring.
+
+    // const numbers = [3,5,7,8,9];
+    // // Here we assign a,b and c with 3,5 and 7,
+    // // the rest of the elements will all go to others
+    // const [a,b,c,...others] = numbers;
+    // console.log(a);
+    // console.log(b);
+    // console.log(c);
+    // console.log(others);
+
+
+</script>
+</body>
+</html>
